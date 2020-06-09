@@ -324,45 +324,117 @@ background-position: 100%;
         }
         } 
 
- @media screen and (min-width:1020px){
- 
-    .gym-container{
-        padding-top: 150px;
-        padding-bottom: 150px;
-
-         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    } 
-    .restaurant-container{
-     display: grid;
-     grid-template-columns: 60% 40%;
-     gap: 1em;
-     margin-top: 100px;
-    }
-    .restaurant-text{
-        padding-left: 150px;
-    }
-    
-    .gym-text{
-        padding-right: 150px;
-    }
-
-    .body-text{
-        text-align: left;
-        font-size: 1.125em;
-        font-style: bold;
-        font-weight: 600;
-        color: rgba(72, 76, 127, 0.74);
-        display: block;
-        width: 100%;
-        max-width: 509px;
-        line-height: 27px
-    }
-
-    .gym-title, .restaurant-title{
-        font-size: 5vw;
-    }
-
-    
-}  
+        * restaurant and gym section */
+        .restaurant-section{
+            padding-bottom: 100px;
+        }
+        
+        .restaurant-container{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          text-align: center;
+          background-image: url("images/ellipse4.png"), url("images/ellipse3.png");
+            background-repeat: no-repeat, no-repeat;
+            background-position: left bottom, 0% 80%;
+        }
+        
+        .restaurant-title{
+            font-style: normal;
+           font-weight: bold;
+           line-height: 150px;
+           color: #AC8DAF;
+           font-size: 50px;
+           }
+        
+           .body-text{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 27px;
+            color: rgba(72, 76, 127, 0.74);
+           }
+        .restaurant-image img{
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            padding-top: 50px;
+        }
+        
+        
+        .gym-section{
+             background-color: rgb(238, 232, 239);
+        }
+        
+        .gym-container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1em;
+            /* display: flex;
+            flex-direction: column;
+            justify-items: center;
+            text-align: center; */
+            background-image: url("images/ellipse5.png"), url("images/ellipse6.png");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right bottom, 100% 85%; 
+            padding-bottom: 100px;
+        
+        }
+        
+        .gym-title{
+            font-style: normal;
+           font-weight: bold;
+           line-height: 150px;
+            font-size: 50px;
+           color: #484C7F;
+           }
+        
+        .gym-image img{
+            padding-top: 100px;
+            width: 100%;
+            height: auto;
+        }
+        
+            /* mobile for gym and restaurant */
+         @media screen and (min-width:1020px){
+         
+            .gym-container{
+                padding-top: 100px;
+                padding-bottom: 150px;
+        
+                 display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            } 
+            .restaurant-container{
+             display: grid;
+             grid-template-columns: 60% 40%;
+             gap: 1em;
+             margin-top: 100px;
+            }
+            .restaurant-text{
+                padding-top: 100px;
+                padding-left: 150px;
+            }
+            
+            .gym-text{
+                padding-right: 150px;
+                padding-top: 100px;
+            }
+        
+            .body-text{
+                text-align: left;
+                font-size: 1.125em;
+                font-style: bold;
+                font-weight: 600;
+                color: rgba(72, 76, 127, 0.74);
+                display: block;
+                width: 100%;
+                max-width: 509px;
+                line-height: 27px
+            }
+        
+            .gym-title, .restaurant-title{
+                font-size: 5vw;
+            }
+         }
